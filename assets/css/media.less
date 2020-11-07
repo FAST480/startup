@@ -89,7 +89,7 @@
 	//=======================LATEST WORKS===================
 	.works__content {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(5,1fr);
+		grid-template-rows: repeat(5,320px);
 		grid-gap: 20px;
 		margin-top: 70px;
 	}
@@ -116,6 +116,17 @@
 		}
 	}
 }
+@media(max-width: 565px){
+	.aboutus{
+		.aboutus__content{
+			max-width: 350px;
+			margin: 0 auto;
+		}
+	}
+	.works__content {
+		grid-template-rows: repeat(5,220px);
+	}
+}
 @media(max-width:425px){
 	//=======================LATEST WORKS===================
 	.title__block--tabs {
@@ -126,5 +137,8 @@
 				margin: 0;
 			}
 		}
+	}
+	.works__content {
+		grid-template-rows: repeat(5,160px);
 	}
 }
