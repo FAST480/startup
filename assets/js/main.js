@@ -22,4 +22,7 @@ $(document).ready(function(){
 			}
 		}
 	});
+	$(".works__body").easyFilter({
+		animation:'fade'
+	});
 });
