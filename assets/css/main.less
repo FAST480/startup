@@ -417,6 +417,127 @@ a{
 	padding: 10px 20px;
 	font-weight: 700;
 }
-//=======================HEADER=========================
-//=======================HEADER=========================
+//=======================DO YOU LIKE?=========================
+.doyoulike {
+
+	padding: 100px 0;
+	background-image: url("../img/bg-parallax.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.doyoulike__body {
+	text-align: center;
+}
+.doyoulike__title,
+.doyoulike__subtitle {
+	font-family: @roboto;
+	font-size: 30px;
+	color: #fff;
+	line-height: 1.5;
+}
+.doyoulike__btn {
+	padding: 15px 25px;
+	margin: 50px 0 0 0;
+}
+//=======================POSTS==========================
+.posts {
+	padding: 100px 0;
+}
+.posts__content {
+	margin: 65px 0 0 0;
+}
+.posts__article {
+	width: 100%;
+	display: flex;
+	padding: 38px 0;
+	border-bottom: 1px solid #dddddd;
+	&:first-child{
+		padding-top: 0;
+	}
+	&:last-child{
+		padding-bottom: 0;
+		border: 0;
+	}
+}
+.posts__article--image {
+	flex: 0 0 32%;
+	margin: 0 40px 0 0;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover
+	}
+}
+.posts__article--offer_date-title {
+	display: flex;
+	align-items: center;
+}
+.posts__article--offer_date {
+	display: inline-block;
+	text-align: center;
+	font-weight: 700;
+	color: #777777;
+	padding: 15px;
+	border: 2px solid #555555;
+	text-transform: uppercase;
+	margin: 0 25px 0 0;
+	.number {
+		font-size: 24px;
+		line-height: 20px;
+	}
+	.month {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+.posts__article--offer_title {
+	.title {
+		color: #555555;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.title,
+	.author__name,
+	.author__category{
+		transition: .3s;
+	}
+	.author {
+		font-family: @roboto;
+		color: #777777;
+		font-size: 13px;
+		font-style: italic;
+		margin: 15px 0 0 0;
+		a{
+			color: #777777;
+		}
+	}
+	&:hover{
+		.title,
+		.author__name,
+		.author__category{
+			color: @c-general;
+		}
+	}
+}
+.posts__article--offer_text {
+	font-size: 14px;
+	font-family: @roboto;
+	color: #555555;
+	line-height: 1.7;
+	margin: 20px 0;
+}
+.posts__article--offer_more {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	font-family: @roboto;
+	color: #777777;
+	transition: .3s;
+	&:hover{
+		color: @c-general;
+	}
+}
 //=======================HEADER=========================
