@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
+	$(".aboutus__content").owlCarousel({
 		margin:30,
 		nav:true,
 		navText:['⟨','⟩'],
@@ -21,6 +21,9 @@ $(document).ready(function(){
 				items:4
 			}
 		}
+	});
+	$(".quotes__slider").owlCarousel({
+		items: 1,
 	});
 	$(".works__body").easyFilter({
 		animation:'fade'

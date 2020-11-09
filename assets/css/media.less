@@ -108,6 +108,15 @@
 	.posts__article--offer {
 		margin: 15px 0 0 0;
 	}
+	//=======================CONTACT=========================
+	.contact__content{
+		flex-direction: column;
+
+	}
+	.contact__address{
+		display: flex;
+		justify-content: space-between;
+	}
 }
 @media(max-width: 600px){
 	//=======================SERVICES=========================
@@ -132,6 +141,7 @@
 	}
 }
 @media(max-width: 565px){
+	//=======================ABOUT US=========================
 	.aboutus{
 		.aboutus__content{
 			max-width: 350px;
@@ -140,6 +150,21 @@
 	}
 	.works__content {
 		grid-template-rows: repeat(5,220px);
+	}
+	//=======================QUOTES=========================
+	.quotes__logos{
+		flex-direction: column;
+	}
+	.quotes__item{
+		margin: 0 0 30px 0;
+	}
+	//=======================CONTACT=========================
+	.contact__address{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.contact__address-item:last-child{
+		margin: 0 0 30px 0;
 	}
 }
 @media(max-width:425px){
@@ -155,5 +180,10 @@
 	}
 	.works__content {
 		grid-template-rows: repeat(5,160px);
+	}
+	//=======================CONTACT=========================
+	.contact__address{
+		display: block;
+		margin: 0 auto;
 	}
 }
